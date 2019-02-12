@@ -4,3 +4,11 @@
     background: black;
     border: 2px grey solid;
 }
+
+.display p {
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 70px;
+}
