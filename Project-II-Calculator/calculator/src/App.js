@@ -13,7 +13,7 @@ const App = () => {
       </div>
       <div className="buttons">
         <div className="numbers-panel">
-          <NumberButton buttonStyle="num-buttons zero-button" text="Clear" />
+          <ActionButton buttonStyle="num-buttons zero-button" text="Clear" />
           <NumberButton buttonStyle="num-buttons" text="7" />
           <NumberButton buttonStyle="num-buttons" text="8" />
           <NumberButton buttonStyle="num-buttons" text="9" />
@@ -23,7 +23,7 @@ const App = () => {
           <NumberButton buttonStyle="num-buttons" text="1" />
           <NumberButton buttonStyle="num-buttons" text="2" />
           <NumberButton buttonStyle="num-buttons" text="3" />
-          <NumberButton buttonStyle="num-buttons zero-button" text="0" />
+          <ActionButton buttonStyle="num-buttons zero-button" text="0" />
         </div>
         <div className="operands">
           <NumberButton buttonStyle="oprand-buttons" text="÷" />
