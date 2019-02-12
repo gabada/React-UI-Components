@@ -7,16 +7,9 @@ import NumberButton from './components/ButtonComponents/NumberButton';
 const App = () => {
   return (
     <div className="container">
-      <CalculatorDisplay />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
-      <NumberButton />
+      <div>
+        <CalculatorDisplay />
+      </div>
     </div>
   );
 };
