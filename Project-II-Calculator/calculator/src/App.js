@@ -1,21 +1,38 @@
 import React from 'react';
 import './App.css';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import ActionButton from './components/ButtonComponents/ActionButton';
+import NumberButton from './components/ButtonComponents/NumberButton';
+
 
 const App = () => {
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className="container">
+      <div className="calc-display">
+        <CalculatorDisplay />
+      </div>
+      <div className="buttons">
+        <div className="numbers-panel">
+          <ActionButton buttonStyle="num-buttons zero-button" text="Clear" />
+          <NumberButton buttonStyle="num-buttons" text="7" />
+          <NumberButton buttonStyle="num-buttons" text="8" />
+          <NumberButton buttonStyle="num-buttons" text="9" />
+          <NumberButton buttonStyle="num-buttons" text="4" />
+          <NumberButton buttonStyle="num-buttons" text="5" />
+          <NumberButton buttonStyle="num-buttons" text="6" />
+          <NumberButton buttonStyle="num-buttons" text="1" />
+          <NumberButton buttonStyle="num-buttons" text="2" />
+          <NumberButton buttonStyle="num-buttons" text="3" />
+          <ActionButton buttonStyle="num-buttons zero-button" text="0" />
+        </div>
+        <div className="operands">
+          <NumberButton buttonStyle="oprand-buttons" text="÷" />
+          <NumberButton buttonStyle="oprand-buttons" text="x" />
+          <NumberButton buttonStyle="oprand-buttons" text="–" />
+          <NumberButton buttonStyle="oprand-buttons" text="+" />
+          <NumberButton buttonStyle="oprand-buttons" text="=" />
+          </div>
+      </div>
     </div>
   );
 };

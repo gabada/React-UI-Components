@@ -1,0 +1,19 @@
+.oprand-buttons {
+    background: darkred;
+    height: 94px;
+    width: 120px;
+    border: 1px gray solid;
+    font-size: 55px;
+    color: white;
+}
+
+.num-buttons {
+    height: 94px;
+    width: 33.33%;
+    background: white;
+    font-size: 40px;
+}
+
+.zero-button {
+    width: 100%;
+}
